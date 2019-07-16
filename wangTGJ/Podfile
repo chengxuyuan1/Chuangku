@@ -1,0 +1,24 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'wangTGJ' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  #use_frameworks!
+  #pod 'Socket.IO-Client-Swift', '~> 13.3.0'
+  # Pods for wangTGJ
+  pod 'Masonry'
+  pod 'AFNetworking', '~> 3.0'
+  pod 'EasyShowView','~>2.1'
+  pod 'IQKeyboardManager'
+  
+  target 'wangTGJTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'wangTGJUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

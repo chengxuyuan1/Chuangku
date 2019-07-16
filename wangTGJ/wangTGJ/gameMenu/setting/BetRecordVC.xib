@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BetRecordVC">
+            <connections>
+                <outlet property="dateBtn" destination="Xjy-4x-cxp" id="0Ct-ZD-iVK"/>
+                <outlet property="line" destination="AFy-sL-GIS" id="Dzx-6x-JAZ"/>
+                <outlet property="titleLab" destination="qSR-Hq-Dhq" id="PhQ-YU-FZh"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FAF-Il-BST" userLabel="nav">
+                    <rect key="frame" x="0.0" y="20" width="320" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycb-FH-93O">
+                            <rect key="frame" x="0.0" y="0.0" width="46" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="46" id="njJ-wu-y4Y"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="7" minY="6" maxX="8" maxY="6"/>
+                            <state key="normal" image="backbtn.png"/>
+                            <connections>
+                                <action selector="backBtnAction:" destination="-1" eventType="touchUpInside" id="l98-S3-HA8"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="下注记录" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qSR-Hq-Dhq">
+                            <rect key="frame" x="86" y="0.0" width="148" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="148" id="vVD-E1-0Se"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.69411764705882351" green="0.59607843137254901" blue="0.49803921568627452" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xjy-4x-cxp">
+                            <rect key="frame" x="179" y="8" width="123" height="34"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="123" id="b19-zO-ivz"/>
+                            </constraints>
+                            <inset key="titleEdgeInsets" minX="-54" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="91" minY="10" maxX="12" maxY="10"/>
+                            <state key="normal" title="今天" image="ac_spinner_down_arrow.png">
+                                <color key="titleColor" red="0.91764705882352937" green="0.80784313725490198" blue="0.72156862745098038" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="dateBtnAction:" destination="-1" eventType="touchUpInside" id="8kD-2t-Vhr"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.21568627450980393" green="0.21568627450980393" blue="0.21568627450980393" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="qSR-Hq-Dhq" secondAttribute="bottom" id="COi-6C-k1x"/>
+                        <constraint firstItem="ycb-FH-93O" firstAttribute="leading" secondItem="FAF-Il-BST" secondAttribute="leading" id="Zdr-si-YeM"/>
+                        <constraint firstItem="qSR-Hq-Dhq" firstAttribute="centerX" secondItem="FAF-Il-BST" secondAttribute="centerX" id="cVT-Sg-6V5"/>
+                        <constraint firstAttribute="height" constant="50" id="gaQ-zV-px1"/>
+                        <constraint firstItem="qSR-Hq-Dhq" firstAttribute="top" secondItem="FAF-Il-BST" secondAttribute="top" id="jFW-if-X6p"/>
+                        <constraint firstItem="ycb-FH-93O" firstAttribute="top" secondItem="FAF-Il-BST" secondAttribute="top" id="lPX-wI-KQX"/>
+                        <constraint firstAttribute="trailing" secondItem="Xjy-4x-cxp" secondAttribute="trailing" constant="18" id="oW1-No-4l1"/>
+                        <constraint firstItem="Xjy-4x-cxp" firstAttribute="top" secondItem="FAF-Il-BST" secondAttribute="top" constant="8" id="owv-GA-Qn4"/>
+                        <constraint firstAttribute="bottom" secondItem="Xjy-4x-cxp" secondAttribute="bottom" constant="8" id="wKN-A4-d7V"/>
+                        <constraint firstAttribute="bottom" secondItem="ycb-FH-93O" secondAttribute="bottom" id="wsx-9n-OBO"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AFy-sL-GIS" userLabel="line">
+                    <rect key="frame" x="0.0" y="70" width="320" height="3"/>
+                    <color key="backgroundColor" red="0.59607843137254901" green="0.51764705882352946" blue="0.4392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="3" id="MJC-4S-L65"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="没有记录" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="92S-at-c9v">
+                    <rect key="frame" x="104" y="273.5" width="112" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="qaq-97-hcv"/>
+                        <constraint firstAttribute="width" constant="112" id="zLu-CJ-q3g"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.67450980392156867" green="0.59999999999999998" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="AFy-sL-GIS" firstAttribute="top" secondItem="FAF-Il-BST" secondAttribute="bottom" id="0IF-rx-zzp"/>
+                <constraint firstItem="FAF-Il-BST" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="1ET-yN-ger"/>
+                <constraint firstItem="FAF-Il-BST" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="7aS-ho-u7o"/>
+                <constraint firstItem="AFy-sL-GIS" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="BRE-ln-slo"/>
+                <constraint firstItem="92S-at-c9v" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="TWO-nD-xjC"/>
+                <constraint firstItem="FAF-Il-BST" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="XeX-Vk-inl"/>
+                <constraint firstItem="92S-at-c9v" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="jck-1L-cCn"/>
+                <constraint firstItem="AFy-sL-GIS" firstAttribute="width" secondItem="FAF-Il-BST" secondAttribute="width" id="yQf-4m-eZ0"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="-76" y="55"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ac_spinner_down_arrow.png" width="54" height="42"/>
+        <image name="backbtn.png" width="53" height="77"/>
+    </resources>
+</document>
